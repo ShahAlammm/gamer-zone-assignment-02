@@ -49,3 +49,153 @@ button{
     padding: 10px;
     align-items: center;
 }
+                               /* main */
+
+
+                               /* Section- 01 */
+.banner{
+    display: flex;
+   
+}
+.banner-background{
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    margin: 0;
+   
+}
+.banner-text{
+    
+    width: 900px;
+    margin-left: 0px;  
+}
+.banner-title{
+    margin-top: 200px;
+    height: 300px;
+    width: 400px;
+} 
+.banner-title h2{
+    font-size: 3rem;
+    color: #0B0223;
+}
+.banner-title h1{
+    font-size: 6rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-title h4{
+    font-size: 1rem;
+    color: #534C64;
+    margin: 15px;
+}
+.btn-primary{
+    display: flex;
+    justify-content: space-between ;
+    width: 400px;
+    height: 50px;
+}
+.btn-1, .btn-2{
+    color: #FFF;
+    font-size: 1rem;
+}
+.btn-1{
+    width: 130px;
+    padding: 0 0 0 40px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.btn-2{
+    padding: 20px 40px;
+    width: 160px;
+    border-radius: 40px;
+    background: #4EC5F7;
+}
+.banner-image{
+    margin: 15px 100px 0 0;
+    margin-right: 200px;
+} 
+                    /*                       Section- 02                               */
+.online-game{
+    margin-top: 150px;
+} 
+.online-game-title{
+    text-align: center;
+} 
+.online-game-title h1{
+    font-size: 2rem;
+}  
+.card{ 
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    width: 1500px;
+} 
+.card h3{
+    color: #534C64;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 /* Responsive */
+@media screen and (max-width:576px) {
+              header, .card{
+
+                flex-direction: column;
+                padding: 20px;
+                margin: 20px;
+                height: auto;
+              }
+              nav{
+                flex-direction: column;
+                justify-content: center;
+
+              } 
+              .banner{
+                flex-direction: column;
+                width: 880px;
+                height: 700px;
+              margin: 20px;
+              }
+              .banner-image{
+                margin-top: 0px;
+              }
+              .btn-primary{
+                padding-bottom: 30px;
+              }
+              header{
+                box-shadow: none;
+              }
+              .header-part{
+                background: none;
+                
+
+              }
+              .card{
+                grid-template-columns: repeat(1, 1fr);
+                margin: 0 auto;
+                width: auto;
+                align-items: center;
+                gap: 20px;
+                
+              }
+              .online-game{
+                margin-left: 150px;
+                margin-top: 800px;
+              }
+    
+}
+              
