@@ -143,6 +143,10 @@ button{
     margin-top: 10px;
     font-size: 0.8rem;
 }
+.card .card-image:hover{
+    background-color: rgb(23, 243, 3);
+    z-index: 50;
+}
 /* sec- 03 */
 .like{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
