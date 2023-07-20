@@ -404,7 +404,7 @@ button{
 @media screen and (max-width:576px) {
     *{
         width: 425px;
-        
+        /* padding: 10px; */
     }
 
 header{
@@ -415,7 +415,7 @@ header{
     
 }
 
- li img{
+li img{
     height: 50px;
     width: 50px;
     display: grid;
@@ -446,6 +446,15 @@ nav li, button {
     margin-top: 150px;
     flex-direction: column-reverse;
 }
+.banner-title h1{
+    font-size: 2.5rem;
+}
+.banner-text{
+    height: 800px;
+}
+.btn-primary{
+    padding-bottom: 70px;
+}
 .banner-background{
     width: 900px;
     padding: 20px;
@@ -461,9 +470,10 @@ nav li, button {
 }
 .bonus img{
     width: 900px;
+    margin-top: 20px;
 } 
 .bonus-text{
-    padding-left: 200px;
+    padding-left: 300px;
 }
 .bonus-text h2{
     margin: 0 0 0 -175px;
@@ -474,10 +484,11 @@ nav li, button {
 }
                    /* Online  */
 .online-game-title h1{
-  margin-left: 200px;
+  margin-left: 300px;
 }
 .online-game-title p{
     width: 830px;
+    padding-left: 80px;
 }
 .card{
     flex-direction: column;
@@ -486,7 +497,7 @@ nav li, button {
     
 }
 .card-image{
-    margin: 0 -350px;
+    margin: 0 -250px;
 }
 .card-image img{
     width: 500px;
@@ -501,14 +512,41 @@ nav li, button {
                             /* Sec=03 */
 .section-03{
     flex-direction: column;
+    margin-left: 300px;
 }
 .carrier-para{
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin-left: 300px;
+   
+
+}
+.carrier-part{
+   display: none;
 }
 .icon-part{
-    
-    margin: 0;
+    background: none;
+}
+.box h4{
+    font-size: 1.5rem;
+}
+.icon-container-2{
+    margin-left: 70px;
+}
+.icon-container-1, .icon-container-2{
+    padding: 0;
+    margin-top: 200px;
     grid-template-columns: repeat(1, 1fr);
+    height: 1500px;
+    background: none;
+    font-size: 1rem;
+}
+footer{
+    padding: 300px;
+   
+}
+.footer-para{   
+    width: 450px;
+    margin: 0 200px 0 0;
 }
 
 } 
