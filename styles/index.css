@@ -2,7 +2,8 @@
 
 *{
     font-family: 'Work Sans', sans-serif;
-    margin: 0 auto;
+    margin:  auto;
+
 }
                                   /* Header */
 header{
@@ -11,8 +12,7 @@ header{
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     height: 100px;
-    width: auto;
-    margin: 0px;
+    width: 100%;
     align-items: center;
 }
 
@@ -55,18 +55,20 @@ button{
                                /* Section- 01 */
 .banner{
     display: flex;
+    width: 100%;
+    height: 100%;
    
 }
 .banner-background{
     background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
-    margin: 0;
+    /* margin: 0; */
+    width: 100%;
+    height: 700px;
    
 }
-.banner-text{
-    
+.banner-text{ 
     width: 900px;
-    margin-left: 0px;  
 }
 .banner-title{
     margin-top: 200px;
@@ -76,6 +78,7 @@ button{
 .banner-title h2{
     font-size: 3rem;
     color: #0B0223;
+    text-align: left;
 }
 .banner-title h1{
     font-size: 6rem;
@@ -94,16 +97,20 @@ button{
     justify-content: space-between ;
     width: 400px;
     height: 50px;
+    margin-top: 70px;
+    
 }
 .btn-1, .btn-2{
     color: #FFF;
     font-size: 1rem;
 }
 .btn-1{
+    justify-content: center;
     width: 130px;
-    padding: 0 0 0 40px;
+    padding: 20px 20px;
     border-radius: 40px;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    
 }
 .btn-2{
     padding: 20px 40px;
@@ -114,6 +121,8 @@ button{
 .banner-image{
     margin: 15px 100px 0 0;
     margin-right: 200px;
+    width: 100%;
+    height: 100%;
 } 
                                           /* Bonus */
 .bonus{
@@ -205,18 +214,18 @@ button{
     max-width: 350px;
     gap: 10px;
     font-size: 2rem;
-    margin: 150px 0 0 250px;
 }
 .section-03-para{
     text-align: right;
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin-top: 15px;
     color: #534C64;
 }
 
 .section-03{
     margin-top: 150px;
     display: flex;
+    width: 100%;
 }
 .horse{
     margin-right: 150px;
@@ -228,7 +237,7 @@ button{
     margin-top: -300px;
 
 }
-/* section 04 */
+                       /* section 04 */
 .carrier-part{
     width: 100%;
     margin-top: 300px;
@@ -243,7 +252,7 @@ button{
 }
 .carrier-txt{
     width: 50%;
-    padding: 130px 20px 0 130px ;
+    padding: 50px 20px 0 100px ;
 }
 .carrier-txt h2{
     color: #FFF;
@@ -284,49 +293,51 @@ button{
     color: #F948B2;
     background-color: #FFF;
     border-radius: 30px;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1rem;
     text-transform: uppercase;
-    padding: 20px;
     border: none;
+    height: 50px;
    
 }
                                /* section 06 */
-.icon-container{
+
+.icon-part{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    width: 100%;
+    height: 100%;
+}                               
+.icon-container-1{
     width: 1170px;
-    margin: 0 auto;
-    margin-top: 100px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center ;
+    padding-top: 150px ;
+    gap: 50px;
 }
-.row-1-icon{
+.icon-container-2{
+    width: 1000px;
+    height: 80px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center ;
+    margin-top: 50px;
+    gap: 50px;
+    
+}
+.box{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #FFF;
 }
-.icon-container .row-1-icon :hover{
-    background-color: #FF42A5;
-    color: #FFF;
-    transition: .5s;
-    border: 1px solid green;
-    height: 10px;
-    width: 20px;
-    border-radius: 5px;
+.box:hover{
+    border: 2px solid rgb(255, 15, 15);
 }
-.icon-container .row-2-icon :hover{
-    background-color: #FF42A5;
-    color: #FFF;
-    transition: .5s;
-    border: 1px solid green;
-    height: 10px;
-    width: 20px;
-    border-radius: 20px;
-}
-.row-2-icon{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px 0;
-}
-/* Footer */
+
+                        /* Footer */
 .footer{
     width: 100%;
     background-color: #534C64;   
@@ -334,7 +345,6 @@ button{
 .footer-title-text{
     color: #FFF;
     font-size: 45px;
-    /* font-weight: 700; */
     margin-left: 40px;  
 }
 .footer-container{
@@ -342,7 +352,6 @@ button{
     justify-content: center;
     width: 300px;
     margin: 0 auto;
-    margin-top: 100px;
     text-align: center;
     padding: 100px 0;
 }
@@ -393,50 +402,113 @@ button{
 
                                  /* Responsive */
 @media screen and (max-width:576px) {
-              header, .card{
+    *{
+        width: 425px;
+        
+    }
 
-                flex-direction: column;
-                padding: 20px;
-                margin: 20px;
-                height: auto;
-              }
-              nav{
-                flex-direction: column;
-                justify-content: center;
-
-              } 
-              .banner{
-                flex-direction: column;
-                width: 880px;
-                height: 700px;
-              margin: 20px;
-              }
-              .banner-image{
-                margin-top: 0px;
-              }
-              .btn-primary{
-                padding-bottom: 30px;
-              }
-              header{
-                box-shadow: none;
-              }
-              .header-part{
-                background: none;
-                
-
-              }
-              .card{
-                grid-template-columns: repeat(1, 1fr);
-                margin: 0 auto;
-                width: auto;
-                align-items: center;
-                gap: 20px;
-                
-              }
-              .online-game{
-                margin-left: 150px;
-                margin-top: 800px;
-              }
+header{
+    margin-top: 100px;
+    flex-direction: column;
+    height: 400px;
+    box-shadow: none;
     
 }
-              
+
+ li img{
+    height: 50px;
+    width: 50px;
+    display: grid;
+    
+}
+.header-part img{
+    height: 100px;
+}
+span{
+    height: 100px;
+    font-size: 5rem;
+}
+nav > ul{
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px ;
+    text-align: center;
+    width: 200px ;
+    font-size: 1.5rem;
+    margin-right: 60px;   
+} 
+
+nav li, button {
+    font-size: 1.5rem;
+}
+                    /* Banner */
+.banner{
+    margin-top: 150px;
+    flex-direction: column-reverse;
+}
+.banner-background{
+    width: 900px;
+    padding: 20px;
+    
+}
+.banner-image img{
+    width: 900px;
+}
+                     /* Bonus */
+.bonus{
+    flex-direction: column;
+    background: none;
+}
+.bonus img{
+    width: 900px;
+} 
+.bonus-text{
+    padding-left: 200px;
+}
+.bonus-text h2{
+    margin: 0 0 0 -175px;
+}
+.bonus-text p{
+    text-align: center;
+    width: auto;
+}
+                   /* Online  */
+.online-game-title h1{
+  margin-left: 200px;
+}
+.online-game-title p{
+    width: 830px;
+}
+.card{
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.card-image{
+    margin: 0 -350px;
+}
+.card-image img{
+    width: 500px;
+    height: 600px;
+}
+.card{
+    gap: 50px;
+}
+.card h3{
+    font-size: 20px;
+}
+                            /* Sec=03 */
+.section-03{
+    flex-direction: column;
+}
+.carrier-para{
+    flex-direction: column-reverse;
+}
+.icon-part{
+    
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+} 
