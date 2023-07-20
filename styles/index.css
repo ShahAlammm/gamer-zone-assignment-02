@@ -115,15 +115,52 @@ button{
     margin: 15px 100px 0 0;
     margin-right: 200px;
 } 
+                                          /* Bonus */
+.bonus{
+    display: flex;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.bonus-text{
+    padding: 100px 200px 100px 0;
+    text-align: center;
+    
+}
+.bonus-text p, h2{
+    text-align: right;
+    width: 600px;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    color: #534C64;
+
+}
+.bonus-text .btn-3{
+    color: #FFF;
+    font-size: 1.5rem;
+    height: 60px;
+    width: 200px;
+    padding-left: 25px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    margin-bottom: 40px;
+}
+.bonus h1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
                     /*                       Section- 02                               */
 .online-game{
-    margin-top: 150px;
+    margin-top: 100px;
 } 
 .online-game-title{
     text-align: center;
 } 
 .online-game-title h1{
-    font-size: 2rem;
+    font-size: 3rem;
 }  
 .funny{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -143,11 +180,20 @@ button{
     margin-top: 10px;
     font-size: 0.8rem;
 }
-.card .card-image:hover{
-    background-color: rgb(23, 243, 3);
-    z-index: 50;
+.card-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-/* sec- 03 */
+.card-image img{
+    display: block;
+}
+.card-image:hover{
+    /* position: absolute; */
+    background-image: url('../images/play-button\ 1.svg');
+    background-repeat: no-repeat;
+}
+                                /* sec- 03 */
 .like{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -163,8 +209,9 @@ button{
 }
 .section-03-para{
     text-align: right;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     margin-top: 10px;
+    color: #534C64;
 }
 
 .section-03{
@@ -173,9 +220,12 @@ button{
 }
 .horse{
     margin-right: 150px;
+    position: static;
 }
 .cartoon{
-    margin: -180px;
+    position: relative;
+    margin: -150px;
+    margin-top: -300px;
 
 }
 /* section 04 */
@@ -185,56 +235,50 @@ button{
     background-color: #FF42A5;
 }
 .carrier-content{
-    width: 1170px;
     margin: 0 auto;
     text-align: center;
-}
-.carrier-content{
     display: flex;
     justify-content: space-between;
     
 }
 .carrier-txt{
     width: 50%;
-    padding: 100px 0;
+    padding: 130px 20px 0 130px ;
 }
 .carrier-txt h2{
     color: #FFF;
     font-size: 48px;
     font-weight: 700;
+    text-align: left;
+
     
 }
 .carrier-image img{
-    width: 100%;
-    height: 100%;
     margin: auto;
-    padding-left: 220px;
-    background-color: #FF42A5 ;
 }
 .carrier-txt p{
     color: #FFF;
-    text-align: left;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 1.5rem;
     margin: 50px 0;
+}
+.c-text{
+   text-align: left;
 }
 .carrier-para{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    text-align: left;
 }
 .para-h1{
     color: #FFF;
     text-align: left;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1.5rem;
     margin-right: 10px;
 }
 .para-h2{
     color: #FFF;
     text-align: right;
     font-size: 1.5rem;
-    font-weight: 600;
+
 }
 .carrier-txt .btn-carrier{
     color: #F948B2;
@@ -263,17 +307,17 @@ button{
     color: #FFF;
     transition: .5s;
     border: 1px solid green;
-    height: 30px;
-    width: 50px;
+    height: 10px;
+    width: 20px;
     border-radius: 5px;
 }
 .icon-container .row-2-icon :hover{
     background-color: #FF42A5;
     color: #FFF;
     transition: .5s;
-    border: 5px solid green;
-    height: 50px;
-    width: 200px;
+    border: 1px solid green;
+    height: 10px;
+    width: 20px;
     border-radius: 20px;
 }
 .row-2-icon{
@@ -290,13 +334,13 @@ button{
 .footer-title-text{
     color: #FFF;
     font-size: 45px;
-    font-weight: 700;
+    /* font-weight: 700; */
     margin-left: 40px;  
 }
 .footer-container{
     display: flex;
     justify-content: center;
-    width: 1170px;
+    width: 300px;
     margin: 0 auto;
     margin-top: 100px;
     text-align: center;
@@ -313,7 +357,7 @@ button{
     justify-content: space-evenly;
     width: 50%;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.60);
+    color: rgba(250, 248, 248, 0.986);
     font-size: 15px;
     font-weight: 400;
 }
